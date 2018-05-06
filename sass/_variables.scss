@@ -1,0 +1,20 @@
+/* COLORS */
+$background-color: rgb(9, 11, 16);
+$primary-color: lighten($background-color, 10);
+$accent-color: rgb(66, 105, 165);
+$hover-accent-color: rgb(41, 83, 145);
+$warn-color: rgb(220, 97, 65);
+$hover-warn-color: rgb(196, 68, 35);
+$success-color: rgb(57, 130, 90);
+$hover-success-color: rgb(31, 107, 65);
+$light-border-color: rgb(150,150, 150);
+$text: rgb(200, 200, 200);
+
+/* DIMENSIONS */
+$header-height: 3rem;
+$sidebar-width: 6rem;
+$aside-width: 12rem;
+$footer-height: 3rem;
+
+/* BORDERS */
+$light-thin-border: 1px solid $light-border-color;

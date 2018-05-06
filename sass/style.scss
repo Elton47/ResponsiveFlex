@@ -1,0 +1,103 @@
+@import "_variables.scss";
+html, body {
+  width: 100vw;
+  height: 100vh;
+  -webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+          user-select: none;
+  background-color: $primary-color;
+  color: $text;
+  display: flex;
+  flex-direction: column;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+header {
+  height: $header-height;
+  background-color: $primary-color;
+}
+main {
+  flex: 1;
+  display: inherit;
+  border-top: $light-thin-border;
+  border-bottom: $light-thin-border;
+  >nav {
+    width: $sidebar-width;
+    background-color: $primary-color;
+    display: inherit;
+    >ul {
+      flex: 1;
+      max-height: 75%;
+      margin: auto 0;
+      display: inherit;
+      flex-direction: column;
+      >li {
+        flex: 1;
+        margin: .5rem;
+        height: $sidebar-width;
+        background-color: $background-color;
+        display: inherit;
+        align-items: center;
+        justify-content: center;
+        border: $light-thin-border;
+        border-radius: .25rem;
+        transition: .3s ease;
+        &:hover {
+          background-color: $hover-accent-color;
+        }
+      }
+    }
+  }
+  >aside {
+    width: $aside-width;
+    background-color: $primary-color;
+    display: inherit;
+    >ul {
+      flex: 1;
+      height: 75%;
+      margin: auto 0;
+      display: inherit;
+      flex-direction: column;
+      >li {
+        flex: 1;
+        display: inherit;
+        >article {
+          flex: 1;
+          margin: .5rem;
+          background-color: $background-color;
+          display: inherit;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  >.main-content {
+    flex: 1;
+    background-color: $background-color;
+    border-left: $light-thin-border;
+    border-right: $light-thin-border;
+    border-radius: 1rem;
+  }
+}
+footer {
+  height: $footer-height;
+  background-color: $primary-color;
+}
+
+button {
+  background-color: $accent-color;
+  color: $text;
+  text-shadow: 1px 1px $primary-color;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  transition: .3s ease;
+  &:hover, &:active {
+    background-color: $hover-accent-color;
+  }
+}
