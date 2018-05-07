@@ -4,6 +4,8 @@
     <title>ResponsiveFlex</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.min.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <header>
@@ -13,7 +15,7 @@
     <main>
       <nav>
         <ul>
-          <li>Link1</li>
+          <li onclick="toggleDrivingGame();">Driving Game</li>
           <li>Link2</li>
           <li>Link3</li>
           <li>Link4</li>
@@ -24,7 +26,15 @@
         </ul>
       </nav>
       <div class="main-content">
-
+        <div class="driving-game-wrapper hidden">
+          <div class="car-wrapper">
+            <div class="car-wheels-front"></div>
+            <div class="car-wheels-rear"></div>
+            <div class="car-body"></div>
+            <div class="car-head"></div>
+            <div class="car-rear"></div>
+          </div>
+        </div>
       </div>
       <aside>
         <ul>
