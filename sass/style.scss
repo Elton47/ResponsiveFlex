@@ -99,7 +99,8 @@ main {
         width: 4rem;
         height: 5rem;
         position: absolute;
-        bottom: 0;
+        top: 45%;
+        left: 45%;
         >.car-body {
           position: absolute;
           top: 0;
@@ -123,7 +124,7 @@ main {
           bottom: 12.5%;
         }
         >.car-head {
-          background-color: $hover-accent-color;
+          background-color: $accent-color;
           position: absolute;
           top: 5%;
           right: 20%;
