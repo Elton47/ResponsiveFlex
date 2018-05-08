@@ -48,3 +48,7 @@ function stopCar(e) {
   if(kc === 83 || kc === 40) direction.down = false;
   if(kc === 65 || kc === 37) direction.left = false;
 }
+function toggleTheme() {
+  $('body')[0].classList.toggle('inverted');
+  $('.car-wrapper')[0].classList.toggle('inverted');
+}
